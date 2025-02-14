@@ -14,3 +14,6 @@ And you got it, just a little changes in name and you have your music on your co
 ## Dependencies
 You need [yt-dlp](https://github.com/yt-dlp/yt-dlp) & [ffmpeg](https://github.com/FFmpeg/FFmpeg) to get this to work.
 Works on Windows 10 and higher. (Or any other windows that has Powershell)
+
+## Future updates
+- [ ] Checking for downloading playlist and prompt to choose download one file or all playlist.
