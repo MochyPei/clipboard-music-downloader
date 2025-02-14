@@ -9,7 +9,10 @@ echo %url% | findstr /C:"https://" >nul
 if %errorlevel% equ 0 (
 	echo Downloading...
 	yt-dlp -o "{%%(uploader)s} %%(fulltitle)s.%%(ext)s" -x --audio-quality 0 --audio-format mp3 "%url%"
+	call "C:\..\listWindows.bat"|find /i "explorer::Music" >nul 2>&1 || (
+	explorer "C:\Users\..\Music"
 	)
+	del listWindows.exe
 ) else (
 	echo Clipboard does not contain url
 	echo %url%
